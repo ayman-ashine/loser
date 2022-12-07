@@ -34,6 +34,9 @@
                 text-align: center;
             }
             .main-header .title{
+                background: linear-gradient(0deg, #ffffff, #ff0000);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
                 text-shadow: #ffffff 0px 0px 12px;
                 width: 80%;
                 font-size: 8em;
@@ -95,6 +98,10 @@
                 text-align: left;
                 font-family: sans-serif;
             }
+            .music-image-container{
+                display: flex;
+                justify-content: space-between;
+            }
             .music-image{
                 cursor: pointer;
                 width: 200px;
@@ -130,7 +137,7 @@
         <div class="main-header">
             <div class="blur">
 
-                <p class="title">BAD-LO$ER</p>
+                <p class="title">BADLO$ER</p>
                 <p class="discription">it's me bad loser Topnotch beat maker ever ♪♪</p>
                 <p class="choices">
                     <span onclick="goto('about')"><img src="https://img.icons8.com/ios-glyphs/30/null/info--v1.png"/> about</span>
@@ -148,7 +155,7 @@
             <div class="blur">
 
                 <a href="#about" id="about"></a>
-                    <div class="mini-title">About badloser</div>
+                    <div class="mini-title">About loser</div>
                     <div class="mini-text">
                         - We're gonna write something here that describing you.
                         <br/>
@@ -158,7 +165,7 @@
                     </div>
                 
 
-                <a href="#projects" id="projects"></a>   
+                <a href="#projects" id="projects"></a>
                     <div class="mini-title">Projects</div>
                     <div class="mini-text">
                         - We're gonna write your projects here.
@@ -169,10 +176,12 @@
                         <br/><br/>
                         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5tO2OSAYoFLMa1hACvf9Rz?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         <br/><br/>
-                        <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte1.jpg" alt="image"/>
-                        <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte2.jpg" alt="image"/>
-                        <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte3.jpg" alt="image"/>
-                        <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte4.jpg" alt="image"/>
+                        <div class="music-image-container">
+                            <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte1.jpg" alt="image"/>
+                            <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte2.jpg" alt="image"/>
+                            <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte3.jpg" alt="image"/>
+                            <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte4.jpg" alt="image"/>
+                        </div>
                     </div>
                 
  
