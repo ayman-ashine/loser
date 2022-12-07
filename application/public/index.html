@@ -6,6 +6,9 @@
             ::-webkit-scrollbar-track { background: #000000 }
             ::-webkit-scrollbar-thumb { background: #2c2cafa0 }
             ::-webkit-scrollbar-thumb:hover { background: #2c2caf }
+            a{
+                text-decoration: none;
+            }
             html{
                 background-color: #000;
                 color: #ffffff;
@@ -16,7 +19,7 @@
             *{
                 margin: 0 auto;
                 padding: 0;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-family: 'Franklin Gothic Me00000000000000000000000000dium', 'Arial Narrow', Arial, sans-serif;
                 border-radius: 5px;
                 box-sizing: border-box;
             }
@@ -68,30 +71,32 @@
             .main-container{
                 background-image: url("https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/main_background.gif");
                 background-size: 50% 50%;
-                background-color: #0000ff20;
-                margin: 1em auto;
+                margin-top: 2em;
                 text-align: center;
                 font-size: 1.5em;
                 font-family: sans-serif;
             }
             .mini-title{
-                background-color: #2c2cafa0;
-                color: #d0d0ff;
+                background-color: #ffffffa0;
+                color: #000000;
                 padding: 0.2em;
                 padding-left: 1em;
                 text-align: left;
                 font-family: sans-serif;
+                border-radius: 5px 5px 0px 0px;
             }
             .mini-text{
                 background-color: #000000e0;
-                border: solid 2px #2c2cafa0;
-                color: #d0d0ff;
+                border: solid 1px #ffffffa0;
+                border-radius: 0px 0px 5px 5px;
+                color: #ffffff;
                 margin-bottom: 2em;
                 padding: 1em;
                 text-align: left;
                 font-family: sans-serif;
             }
             .music-image{
+                cursor: pointer;
                 width: 200px;
                 height: 200px;
                 margin: 0.1em;
@@ -101,6 +106,7 @@
                 transform: scale(1.1);
             }
             .contact-image{
+                cursor: pointer;
                 opacity: 0.6;
                 transition: transform 200ms;
             }
@@ -112,6 +118,7 @@
                 color: #f000e0;
             }
             .link{
+                cursor: pointer;
                 color: #f0e000;
                 text-decoration: underline;
                 font-family: sans-serif;
@@ -126,66 +133,95 @@
                 <p class="title">BAD-LO$ER</p>
                 <p class="discription">it's me bad loser Topnotch beat maker ever ♪♪</p>
                 <p class="choices">
-                    <span><img src="https://img.icons8.com/ios-glyphs/30/null/info--v1.png"/> about</span>
-                    <span><img src="https://img.icons8.com/material-sharp/30/null/project-management.png"/> projects</span>
-                    <span><img src="https://img.icons8.com/material/30/null/phone-contact.png"/> contact</span>
-                    <span><img src="https://img.icons8.com/external-inkubators-glyph-inkubators/30/null/external-help-video-interface-inkubators-glyph-inkubators.png"/> info</span>
+                    <span onclick="goto('about')"><img src="https://img.icons8.com/ios-glyphs/30/null/info--v1.png"/> about</span>
+                    <span onclick="goto('projects')"><img src="https://img.icons8.com/material-sharp/30/null/project-management.png"/> projects</span>
+                    <span onclick="goto('contact')"><img src="https://img.icons8.com/material/30/null/phone-contact.png"/> contact</span>
+                    <span onclick="goto('info')"><img src="https://img.icons8.com/external-inkubators-glyph-inkubators/30/null/external-help-video-interface-inkubators-glyph-inkubators.png"/> info</span>
                 </p>
 
             </div>
         </div>
 
+        <!-------------------------------- Split -------------------------------->
+
         <div class="main-container">
             <div class="blur">
 
-                <div class="mini-title">About badloser</div>
-                <div class="mini-text">
-                    - We're gonna write something here that describing you.
-                    <br/>
-                    <span class="unique-word">Unique word</span>
-                    <br/>
-                    <span class="link">Link word</span>
-                </div>
+                <a href="#about" id="about"></a>
+                    <div class="mini-title">About badloser</div>
+                    <div class="mini-text">
+                        - We're gonna write something here that describing you.
+                        <br/>
+                        <span class="unique-word">Unique word</span>
+                        <br/>
+                        <span class="link">Link word</span>
+                    </div>
+                
 
-                <div class="mini-title">Projects</div>
-                <div class="mini-text">
-                    - We're gonna write your projects here.
-                    <br/>
-                    <span class="unique-word">Unique word</span>
-                    <br/>
-                    <span class="link">Link word</span>
-                    <br/><br/>
-                    <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte1.jpg" alt="image"/>
-                    <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte2.jpg" alt="image"/>
-                    <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte3.jpg" alt="image"/>
-                    <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte4.jpg" alt="image"/>
-                </div>
+                <a href="#projects" id="projects"></a>   
+                    <div class="mini-title">Projects</div>
+                    <div class="mini-text">
+                        - We're gonna write your projects here.
+                        <br/>
+                        <span class="unique-word">Unique word</span>
+                        <br/>
+                        <span class="link">Link word</span>
+                        <br/><br/>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5tO2OSAYoFLMa1hACvf9Rz?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <br/><br/>
+                        <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte1.jpg" alt="image"/>
+                        <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte2.jpg" alt="image"/>
+                        <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte3.jpg" alt="image"/>
+                        <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte4.jpg" alt="image"/>
+                    </div>
+                
+ 
+                <a href="#contact" id="contact"></a>
+                    <div class="mini-title">Contact</div>
+                    <div class="mini-text">
+                        - We're gonna write your contact here.
+                        <br/>
+                        <span class="unique-word">Unique word</span>
+                        <br/>
+                        <span class="link">Link word</span>
+                        <br/><br/>
+                        <a href="https://open.spotify.com/artist/5tO2OSAYoFLMa1hACvf9Rz?si=eE4AQxymRCeSDSqceJ0BiQ" target="_blank">
+                            <img class="contact-image" src="https://img.icons8.com/fluency/60/null/spotify.png"/>
+                        </a>
+                        <a href="https://www.instagram.com/itsmebadloser/" target="_blank">
+                            <img class="contact-image" src="https://img.icons8.com/fluency/60/null/instagram-new.png"/>
+                        </a>
+                        <a href="/" target="_blank">
+                            <img class="contact-image" src="https://img.icons8.com/fluency/60/null/facebook-new.png"/>
+                        </a>
+                        <a href="/" target="_blank">
+                            <img class="contact-image" src="https://img.icons8.com/color/60/null/youtube-play.png"/>
+                        </a>
+                    </div>
+                
 
-                <div class="mini-title">Contact</div>
-                <div class="mini-text">
-                    - We're gonna write your contact here.
-                    <br/>
-                    <span class="unique-word">Unique word</span>
-                    <br/>
-                    <span class="link">Link word</span>
-                    <br/><br/>
-                    <img class="contact-image" src="https://img.icons8.com/fluency/60/null/spotify.png"/>
-                    <img class="contact-image" src="https://img.icons8.com/fluency/60/null/instagram-new.png"/>
-                    <img class="contact-image" src="https://img.icons8.com/fluency/60/null/facebook-new.png"/>
-                    <img class="contact-image" src="https://img.icons8.com/color/60/null/youtube-play.png"/>
-                </div>
-
-                <div class="mini-title">Info</div>
-                <div class="mini-text">
-                    - We're gonna write some info here.
-                    <br/>
-                    <span class="unique-word">Unique word</span>
-                    <br/>
-                    <span class="link">Link word</span>
-                </div>
+                <a href="#info" id="info"></a>
+                    <div class="mini-title">Info</div>
+                    <div class="mini-text">
+                        - We're gonna write some info here.
+                        <br/>
+                        <span class="unique-word">Unique word</span>
+                        <br/>
+                        <span class="link">Link word</span>
+                    </div>
 
             </div>
+
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
         </div>
+
+        <script>
+
+            // Goto function //
+            function goto(id){ document.getElementById(id).click(); }
+
+        </script>
 
     </body>
 </html>
