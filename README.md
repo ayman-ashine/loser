@@ -1,2 +1,4 @@
-# website.badloser
-official website for badloser.
+# Badloser
+- Official website for badloser.
+- Hosting by blogger.
+- By gpx-zero.
