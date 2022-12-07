@@ -9,8 +9,9 @@
             html{
                 background-color: #000;
                 color: #ffffff;
-                padding: 1em;
+                padding: 2em 0;
                 max-width: 1000px;
+                min-width: 500px;
             }
             *{
                 margin: 0 auto;
@@ -51,11 +52,15 @@
                 vertical-align: middle;
             }
             .main-header .choices span{
+                display: inline-block;
                 cursor: pointer;
-                margin: 1em;
+                margin: 0 1em;
+                opacity: 0.6;
+                transition: transform 200ms;
             }
             .main-header .choices span:hover{
-                opacity: 0.5;
+                opacity: 1;
+                transform: scale(1.1);
             }
 
             /* Split ---------------------------------------------------------------------- */
@@ -70,7 +75,7 @@
                 font-family: sans-serif;
             }
             .mini-title{
-                background-color: #2c2caf;
+                background-color: #2c2cafa0;
                 color: #d0d0ff;
                 padding: 0.2em;
                 padding-left: 1em;
@@ -79,6 +84,7 @@
             }
             .mini-text{
                 background-color: #000000e0;
+                border: solid 2px #2c2cafa0;
                 color: #d0d0ff;
                 margin-bottom: 2em;
                 padding: 1em;
@@ -89,6 +95,18 @@
                 width: 200px;
                 height: 200px;
                 margin: 0.1em;
+                transition: transform 200ms;
+            }
+            .music-image:hover{
+                transform: scale(1.1);
+            }
+            .contact-image{
+                opacity: 0.6;
+                transition: transform 200ms;
+            }
+            .contact-image:hover{
+                opacity: 0.8;
+                transform: scale(1.1);
             }
             .unique-word{
                 color: #f000e0;
@@ -122,46 +140,48 @@
 
                 <div class="mini-title">About badloser</div>
                 <div class="mini-text">
-                    - Badloser is beat maker who start from 2020,<br/>
-                    - Badloser is beat maker who start from 2020,<br/>
-                    - Badloser is beat maker who start from 2020,<br/>
-                    and keep build some amazing music by using <span class="unique-word">virtual music programmes</span>
-                    and keep build some amazing music by using .
+                    - We're gonna write something here that describing you.
+                    <br/>
+                    <span class="unique-word">Unique word</span>
+                    <br/>
+                    <span class="link">Link word</span>
                 </div>
 
                 <div class="mini-title">Projects</div>
                 <div class="mini-text">
+                    - We're gonna write your projects here.
+                    <br/>
+                    <span class="unique-word">Unique word</span>
+                    <br/>
+                    <span class="link">Link word</span>
+                    <br/><br/>
                     <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte1.jpg" alt="image"/>
                     <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte2.jpg" alt="image"/>
                     <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte3.jpg" alt="image"/>
                     <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte4.jpg" alt="image"/>
-                    <br/><br/>
-                    - There is a lot of projects in differente plateform,<br/>
-                    - There is a lot of projects in differente plateform,<br/>
-                    - There is a lot of projects in differente plateform,<br/>
-                    - There is a lot of projects in differente plateform,<br/>
-                    please check our <span class="link">spotify account</span> for more.
                 </div>
 
                 <div class="mini-title">Contact</div>
                 <div class="mini-text">
-                    - Here is a ways for contact:<br>
-                    - Here is a ways for contact:<br>
-                    - Here is a ways for contact:<br>
-                    - Here is a ways for contact:<br>
-                    <img src="https://img.icons8.com/fluency/60/null/spotify.png"/>
-                    <img src="https://img.icons8.com/fluency/60/null/instagram-new.png"/>
-                    <img src="https://img.icons8.com/fluency/60/null/facebook-new.png"/>
-                    <img src="https://img.icons8.com/color/60/null/youtube-play.png"/>
+                    - We're gonna write your contact here.
+                    <br/>
+                    <span class="unique-word">Unique word</span>
+                    <br/>
+                    <span class="link">Link word</span>
+                    <br/><br/>
+                    <img class="contact-image" src="https://img.icons8.com/fluency/60/null/spotify.png"/>
+                    <img class="contact-image" src="https://img.icons8.com/fluency/60/null/instagram-new.png"/>
+                    <img class="contact-image" src="https://img.icons8.com/fluency/60/null/facebook-new.png"/>
+                    <img class="contact-image" src="https://img.icons8.com/color/60/null/youtube-play.png"/>
                 </div>
 
                 <div class="mini-title">Info</div>
                 <div class="mini-text">
-                    - Info<br/>
-                    - Info<br/>
-                    - Info<br/>
-                    - Info<br/>
-                    - Info<br/>
+                    - We're gonna write some info here.
+                    <br/>
+                    <span class="unique-word">Unique word</span>
+                    <br/>
+                    <span class="link">Link word</span>
                 </div>
 
             </div>
