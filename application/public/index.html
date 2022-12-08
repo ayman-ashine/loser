@@ -1,228 +1,253 @@
 <html>
     <head>
-        <title>test-content</title>
+        <title>Home - Loser</title>
+        <style> @import url('https://fonts.googleapis.com/css2?family=Eater&display=swap'); </style>
+        <style> @import url('https://fonts.googleapis.com/css2?family=Eater&family=Nunito&display=swap'); </style>
         <style>
+            :root {
+                --unique-word-color: #d00000;
+                --link-color: #d0d000;
+            }
             ::-webkit-scrollbar { width: 10px }
             ::-webkit-scrollbar-track { background: #000000 }
-            ::-webkit-scrollbar-thumb { background: #2c2cafa0 }
-            ::-webkit-scrollbar-thumb:hover { background: #2c2caf }
+            ::-webkit-scrollbar-thumb { background: #ffffffa0 }
+            ::-webkit-scrollbar-thumb:hover { background: #ffffff }
             a{
                 text-decoration: none;
             }
             html{
                 background-color: #000;
-                color: #ffffff;
-                padding: 2em 0;
                 max-width: 1000px;
-                min-width: 500px;
+                min-width: 800px;
             }
             *{
+                color: #eee;
                 margin: 0 auto;
                 padding: 0;
-                font-family: 'Franklin Gothic Me00000000000000000000000000dium', 'Arial Narrow', Arial, sans-serif;
                 border-radius: 5px;
                 box-sizing: border-box;
+                font-family: 'Nunito', sans-serif;
             }
             .blur{
-                background-color: #00000080;
+                background-color: #eee;
                 width: 100%;
                 padding: 1em;
             }
-            .main-header{
-                background-image: url("https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte2.jpg");
-                background-size: 50% 100%;
+            .container{
+                margin-top: 5em;
                 text-align: center;
             }
-            .main-header .title{
-                background: linear-gradient(0deg, #ffffff, #ff0000);
+            .container .title{
+                background-image: url("https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/main_background.gif");
+                background-size: 100% 100%;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                text-shadow: #ffffff 0px 0px 12px;
-                width: 80%;
-                font-size: 8em;
+                width: 95%;
+                font-size: 15em;
+                font-family: 'Eater', cursive;
             }
-            .main-header .discription{
-                text-shadow: #ffffff 0px 0px 12px;
-                width: 80%;
+            .container .discription{
+                text-shadow: var(--unique-word-color) 0px 0px 10px;
+                width: 95%;
+                color: var(--unique-word-color);
             }
-            .main-header .choices{
-                background-color: #ffffff;
-                box-shadow: #ffffffa0 0px 0px 5px;
-                color: #000000;
-                padding: 1em;
-                margin: 1em auto;
-                width: 80%;
-                font-size: 1.5em;
+            .container .choices{
+                width: 95%;
+                padding: 0.5em 0;
+                margin-top: 1em;
+                margin-bottom: 0.5em;
+                font-size: 1.6em;
+                display: flex;
+                justify-content: space-between;
             }
-            .main-header .choices img{
+            .container .choices img{
                 vertical-align: middle;
             }
-            .main-header .choices span{
+            .container .choices span{
+                background-color: #00000050;
+                color: #000;
                 display: inline-block;
                 cursor: pointer;
                 margin: 0 1em;
+                padding: 0.5em;
                 opacity: 0.6;
                 transition: transform 200ms;
             }
-            .main-header .choices span:hover{
+            .container .choices span:hover{
                 opacity: 1;
                 transform: scale(1.1);
             }
 
             /* Split ---------------------------------------------------------------------- */
 
-            .main-container{
-                background-image: url("https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/main_background.gif");
-                background-size: 50% 50%;
-                margin-top: 2em;
-                text-align: center;
-                font-size: 1.5em;
-                font-family: sans-serif;
-            }
-            .mini-title{
-                background-color: #ffffffa0;
-                color: #000000;
-                padding: 0.2em;
-                padding-left: 1em;
-                text-align: left;
-                font-family: sans-serif;
+            .container .mini-title{
+                background-color: #00000060;
+                color: #000000c0;
                 border-radius: 5px 5px 0px 0px;
+                padding: 0.6em;
+                font-size: 1.2em;
+                font-weight: 800;
+                text-align: center;
             }
-            .mini-text{
-                background-color: #000000e0;
-                border: solid 1px #ffffffa0;
+            .container .mini-text{
+                background-color: #00000050;
+                color: #000000c0;
                 border-radius: 0px 0px 5px 5px;
-                color: #ffffff;
-                margin-bottom: 2em;
-                padding: 1em;
+                margin-bottom: 4em;
+                padding: 0.5em;
+                font-size: 1em;
+                font-weight: 200;
                 text-align: left;
-                font-family: sans-serif;
             }
-            .music-image-container{
+            .container .music-image-container{
                 display: flex;
                 justify-content: space-between;
             }
-            .music-image{
+            .container .music-image{
                 cursor: pointer;
                 width: 200px;
                 height: 200px;
                 margin: 0.1em;
                 transition: transform 200ms;
             }
-            .music-image:hover{
+            .container .music-image:hover{
                 transform: scale(1.1);
             }
-            .contact-image{
+            .container .contact-image{
                 cursor: pointer;
                 opacity: 0.6;
                 transition: transform 200ms;
             }
-            .contact-image:hover{
+            .container .contact-image:hover{
                 opacity: 0.8;
                 transform: scale(1.1);
             }
-            .unique-word{
-                color: #f000e0;
+            .container .unique-word{
+                color: var(--unique-word-color);
             }
-            .link{
+            .container .link{
                 cursor: pointer;
-                color: #f0e000;
+                color: var(--link-color);
                 text-decoration: underline;
-                font-family: sans-serif;
+            }
+            .footer{
+                background-color: #ffffff50;
+                color: #000;
+                margin-top: 50em;
+                padding: 5em;
+                text-align: left;
+                border-radius: 0px;
+            }
+            #all-elements{
+                display: none;
+            }
+            #dailog-box-container{
+                width: 100%;
+                height: 90%;
+                display: grid;
+            }
+            #dailog-box-container img{
+                width: 300px;
+                height: 200px;
+                place-self: center;
+                position: absolute;
             }
         </style>
     </head>
     <body>
+
+        <div id="dailog-box-container"> <img src="images/loading-circle.gif" alt="image"/> </div>
         
-        <div class="main-header">
-            <div class="blur">
+        
+        <div id="all-elements">
+            <div class="container">
+                <div class="blur">
 
-                <p class="title">BADLO$ER</p>
-                <p class="discription">it's me bad loser Topnotch beat maker ever ♪♪</p>
-                <p class="choices">
-                    <span onclick="goto('about')"><img src="https://img.icons8.com/ios-glyphs/30/null/info--v1.png"/> about</span>
-                    <span onclick="goto('projects')"><img src="https://img.icons8.com/material-sharp/30/null/project-management.png"/> projects</span>
-                    <span onclick="goto('contact')"><img src="https://img.icons8.com/material/30/null/phone-contact.png"/> contact</span>
-                    <span onclick="goto('info')"><img src="https://img.icons8.com/external-inkubators-glyph-inkubators/30/null/external-help-video-interface-inkubators-glyph-inkubators.png"/> info</span>
-                </p>
+                    <p class="title">LO$ER</p>
+                    <hr/><br/>
+                    <p class="discription">it's me bad loser Topnotch beat maker ever ♪♪</p>
+                    <br/><hr/>
+                    <p class="choices">
+                        <span onclick="goto('about')"><img src="https://img.icons8.com/ios-glyphs/30/null/info--v1.png"/> about</span>
+                        <span onclick="goto('projects')"><img src="https://img.icons8.com/material-sharp/30/null/project-management.png"/> projects</span>
+                        <span onclick="goto('contact')"><img src="https://img.icons8.com/material/30/null/phone-contact.png"/> contact</span>
+                        <span onclick="goto('info')"><img src="https://img.icons8.com/external-inkubators-glyph-inkubators/30/null/external-help-video-interface-inkubators-glyph-inkubators.png"/> info</span>
+                    </p>
 
+                </div>
             </div>
-        </div>
 
-        <!-------------------------------- Split -------------------------------->
+            <!-------------------------------- Split -------------------------------->
 
-        <div class="main-container">
-            <div class="blur">
+            <div class="container">
+                <div class="blur">
 
-                <a href="#about" id="about"></a>
-                    <div class="mini-title">About loser</div>
-                    <div class="mini-text">
-                        - We're gonna write something here that describing you.
-                        <br/>
-                        <span class="unique-word">Unique word</span>
-                        <br/>
-                        <span class="link">Link word</span>
-                    </div>
-                
-
-                <a href="#projects" id="projects"></a>
-                    <div class="mini-title">Projects</div>
-                    <div class="mini-text">
-                        - We're gonna write your projects here.
-                        <br/>
-                        <span class="unique-word">Unique word</span>
-                        <br/>
-                        <span class="link">Link word</span>
-                        <br/><br/>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5tO2OSAYoFLMa1hACvf9Rz?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        <br/><br/>
-                        <div class="music-image-container">
-                            <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte1.jpg" alt="image"/>
-                            <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte2.jpg" alt="image"/>
-                            <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte3.jpg" alt="image"/>
-                            <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte4.jpg" alt="image"/>
+                    <a href="#about" id="about"></a>
+                        <div class="mini-title">About loser</div>
+                        <div class="mini-text">
+                            - Beatmaking originated in rap music and originally consists of creating an instrumental or beat by using existing rhythms to create new ones (sampling). It shares its history with this genre, but also with the technical evolution of the tools that enable its practice.<br/>
+                            <span class="unique-word">Unique word</span>
+                            <br/>
+                            <span class="link">Link word</span>
                         </div>
-                    </div>
-                
- 
-                <a href="#contact" id="contact"></a>
-                    <div class="mini-title">Contact</div>
-                    <div class="mini-text">
-                        - We're gonna write your contact here.
-                        <br/>
-                        <span class="unique-word">Unique word</span>
-                        <br/>
-                        <span class="link">Link word</span>
-                        <br/><br/>
-                        <a href="https://open.spotify.com/artist/5tO2OSAYoFLMa1hACvf9Rz?si=eE4AQxymRCeSDSqceJ0BiQ" target="_blank">
-                            <img class="contact-image" src="https://img.icons8.com/fluency/60/null/spotify.png"/>
-                        </a>
-                        <a href="https://www.instagram.com/itsmebadloser/" target="_blank">
-                            <img class="contact-image" src="https://img.icons8.com/fluency/60/null/instagram-new.png"/>
-                        </a>
-                        <a href="/" target="_blank">
-                            <img class="contact-image" src="https://img.icons8.com/fluency/60/null/facebook-new.png"/>
-                        </a>
-                        <a href="/" target="_blank">
-                            <img class="contact-image" src="https://img.icons8.com/color/60/null/youtube-play.png"/>
-                        </a>
-                    </div>
-                
+                    
 
-                <a href="#info" id="info"></a>
-                    <div class="mini-title">Info</div>
-                    <div class="mini-text">
-                        - We're gonna write some info here.
-                        <br/>
-                        <span class="unique-word">Unique word</span>
-                        <br/>
-                        <span class="link">Link word</span>
-                    </div>
+                    <a href="#projects" id="projects"></a>
+                        <div class="mini-title">Projects</div>
+                        <div class="mini-text">
+                            - Beatmaking originated in rap music and originally consists of creating an instrumental or beat by using existing rhythms to create new ones (sampling). It shares its history with this genre, but also with the technical evolution of the tools that enable its practice.<br/>
+                            - Here is some perfect projects please check my <a href="https://open.spotify.com/artist/5tO2OSAYoFLMa1hACvf9Rz"><span class="link">spotify account</span></a> for more.
+                            <br/><br/>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5tO2OSAYoFLMa1hACvf9Rz?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <br/><br/>
+                            <div class="music-image-container">
+                                <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte1.jpg" alt="image"/>
+                                <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte2.jpg" alt="image"/>
+                                <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte3.jpg" alt="image"/>
+                                <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte4.jpg" alt="image"/>
+                            </div>
+                            <br/><br/>
+                        </div>
+                    
+    
+                    <a href="#contact" id="contact"></a>
+                        <div class="mini-title">Contact</div>
+                        <div class="mini-text">
+                            - Beatmaking originated in rap music and originally consists of creating an instrumental or beat by using existing rhythms to create new ones (sampling). It shares its history with this genre, but also with the technical evolution of the tools that enable its practice.<br/>
+                            - Here are some ways to contact <span class="unique-word">Loser</span>.
+                            <br/><br/>
+                            <a href="https://open.spotify.com/artist/5tO2OSAYoFLMa1hACvf9Rz?si=eE4AQxymRCeSDSqceJ0BiQ" target="_blank">
+                                <img class="contact-image" src="https://img.icons8.com/ios-filled/50/FFFFFF/spotify.png"/>
+                            </a>
+                            <a href="https://www.instagram.com/itsmebadloser/" target="_blank">
+                                <img class="contact-image" src="https://img.icons8.com/material-outlined/50/FFFFFF/instagram-new--v1.png"/>
+                            </a>
+                            <a href="/" target="_blank">
+                                <img class="contact-image" src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-new.png"/>
+                            </a>
+                            <a href="/" target="_blank">
+                                <img class="contact-image" src="https://img.icons8.com/ios-filled/50/FFFFFF/twitter-circled--v1.png"/>
+                            </a>
+                            <a href="/" target="_blank">
+                                <img class="contact-image" src="https://img.icons8.com/ios-filled/50/FFFFFF/youtube-play.png"/>
+                            </a>
+                        </div>
+                    
+
+                    <a href="#info" id="info"></a>
+                        <div class="mini-title">Info</div>
+                        <div class="mini-text">
+                            - Beatmaking originated in rap music and originally consists of creating an instrumental or beat by using existing rhythms to create new ones (sampling). It shares its history with this genre, but also with the technical evolution of the tools that enable its practice.<br/>
+                            - We're gonna write some <span class="link">info</span> here.
+                        </div>
+
+                </div>
+
+                <div class="footer">
+                    | by gpx-zero last update in 2022/12/08
+                </div>
 
             </div>
-
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
         </div>
 
         <script>
@@ -230,6 +255,15 @@
             // Goto function //
             function goto(id){ document.getElementById(id).click(); }
 
+            // On window load // 
+            window.onload = () => {
+
+                setTimeout(()=>{
+                    document.getElementById("dailog-box-container").style.display = "none";
+                    document.getElementById("all-elements").style.display = "block";
+                }, 1000);
+
+            }
         </script>
 
     </body>
