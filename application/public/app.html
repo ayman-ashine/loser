@@ -3,7 +3,6 @@
         <title>Home - Loser</title>
         <style> @import url('https://fonts.googleapis.com/css2?family=Eater&display=swap'); </style>
         <style> @import url('https://fonts.googleapis.com/css2?family=Eater&family=Nunito&display=swap'); </style>
-        <link rel="stylesheet" href="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/assets/app.css"/>
         <style>
 :root {
     --unique-word-color: #d00000;
@@ -243,6 +242,24 @@ html{
             </div>
             <div class="container footer"> | by gpx-zero last update in 2022/12/08 </div>
         </div>
-        <script src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/assets/app.js"></script>
+        <script>
+
+// Goto function //
+function goto(id){
+    document.getElementById("dailog-box-container").style.display = "0";
+    document.getElementById(id).click();
+}
+
+// On window load // 
+window.onload = () => {
+
+    setTimeout(()=>{
+        document.getElementById("dailog-box-container").style.display = "none";
+        document.getElementById("all-elements").style.display = "block";
+    }, 1000);
+
+}
+
+        </script>
     </body>
 </html>
