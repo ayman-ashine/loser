@@ -1,9 +1,12 @@
-<html>
+<html lang="en">
     <head>
         <title>Home - Loser</title>
+        <meta charset='utf-8'/>
+        <meta content='width=device-width, initial-scale=1' name='viewport'/>
+        <link href='https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte3.jpg' rel='shortcut icon'/>
         <style> @import url('https://fonts.googleapis.com/css2?family=Eater&display=swap'); </style>
         <style> @import url('https://fonts.googleapis.com/css2?family=Eater&family=Nunito&display=swap'); </style>
-        <style>
+        <style name="global-style">
             :root {
                 --unique-word-color: #d00000;
                 --link-color: #d0d000;
@@ -16,7 +19,7 @@
                 text-decoration: none;
             }
             html{
-                background-color: #000;
+                background-color: #10151a;
             }
             *{
                 margin: 0 auto;
@@ -24,25 +27,41 @@
                 border-radius: 5px;
                 box-sizing: border-box;
                 font-family: 'Nunito', sans-serif;
+                font-size: medium;
             }
+            #all-elements{
+                display: none;
+            }
+            #dailog-box-container{
+                width: 100%;
+                height: 90%;
+                display: grid;
+            }
+            #dailog-box-container img{
+                width: 300px;
+                height: 200px;
+                place-self: center;
+                position: absolute;
+            }
+        </style>
+        <style name="header-style">
             .container{
                 background-color: #eee;
                 text-align: center;
                 border-radius: 0;
                 max-width: 1200px;
                 min-width: 800px;
-                padding: 1em;
             }
             .main-header{
+                background-color: #10151a;
                 position: fixed;
                 z-index: 1000;
-                background-color: #000000;
                 padding: 1em;
                 font-size: 1.2em;
                 border-radius: 0;
                 width: 100%;
                 min-width: 800px;
-                border-bottom: solid 2px #eee;
+                border-bottom: solid 1px #e0e0e050;
             }
             .main-header .choices{
                 text-align: center;
@@ -53,18 +72,16 @@
             .main-header .choices span{
                 background-color: #ffffff;
                 color: #000000;
-                cursor: pointer;
+                opacity: 0.8;
                 padding: 0.5em;
                 margin-left: 1em;
-                opacity: 0.8;
-                transition: transform 200ms;
+                cursor: pointer;
             }
-            .main-header .choices span:hover{
-                opacity: 1;
-                transform: scale(1.1);
-            }
+            .main-header .choices span:hover{ opacity: 1; }
+        </style>
+        <style name="body-style">
             .container .intro-image-container{
-                max-height: 900px;
+                max-height: 600px;
                 overflow: hidden;
                 border-radius: 0;
             }
@@ -78,37 +95,34 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 width: 95%;
-                font-size: 10em;
+                font-size: 15em;
                 font-family: 'Eater', cursive;
             }
             .container .discription{
                 text-shadow: var(--unique-word-color) 0px 0px 10px;
                 width: 95%;
                 color: var(--unique-word-color);
+                margin-top: -5em;
+                margin-bottom: 5em;
             }
-
-            /* ------------------------------------------ */
-            /* ------------------------------------------ */
-            /* ------------------------------------------ */
-
-            .container .mini-title{
-                background-color: #00000030;
-                color: #000000c0;
-                border-radius: 5px 5px 0px 0px;
+            .container .mini-title-mini-text-container{
+                margin-top: 5em;
                 padding: 1em;
+            }
+            .container .mini-title{
+                background-color: #00005030;
+                color: #000000c0;
+                text-align: left;
                 font-size: 1.5em;
-                font-weight: 1000;
-                text-align: center;
+                padding: 1em;
+                border-radius: 5px 5px 0px 0px;
             }
             .container .mini-text{
-                background-color: #000000e0;
+                background-color: #10151a;
                 color: #eee;
-                border-radius: 0px 0px 5px 5px;
-                margin-bottom: 4em;
-                padding: 2em;
-                font-size: 1.2em;
-                font-weight: 200;
                 text-align: left;
+                padding: 1em;
+                border-radius: 0px 0px 5px 5px;
             }
             .container .music-image-container{
                 display: flex;
@@ -145,23 +159,11 @@
             }
             .footer{
                 background-color: #eee;
-                padding-top: 15em;
+                margin: 1em;
+                padding: 1em;
+                padding-top: 20em;
                 text-align: left;
                 border-radius: 0px;
-            }
-            #all-elements{
-                display: none;
-            }
-            #dailog-box-container{
-                width: 100%;
-                height: 90%;
-                display: grid;
-            }
-            #dailog-box-container img{
-                width: 300px;
-                height: 200px;
-                place-self: center;
-                position: absolute;
             }
         </style>
     </head>
@@ -179,27 +181,31 @@
             </div>
 
             <div class="container">
+
                 <div class="intro-image-container">
-                    <img class="intro-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/beatmaker-composer.jpg" />
+                    <img class="intro-image" src="images/beatmaker-composer.jpg" />
                 </div>
-                <p class="title">LO$ER</p>
-                <p class="discription">it's me bad loser Topnotch beat maker ever ♪♪</p>
+                <div class="title">LO$ER</div>
+                <div class="discription">it's me bad loser Topnotch beat maker ever ♪♪</div>
                 <br/>
+
                 <a href="#about" id="about"></a>
+                <div class="mini-title-mini-text-container">
                     <div class="mini-title">About loser</div>
                     <div class="mini-text">
-                        - Beatmaking originated in rap music and originally consists of creating an instrumental or beat by using existing rhythms to create new ones (sampling). It shares its history with this genre, but also with the technical evolution of the tools that enable its practice.<br/>
+                        Beatmaking originated in rap music and originally consists of creating an instrumental or beat by using existing rhythms to create new ones (sampling). It shares its history with this genre, but also with the technical evolution of the tools that enable its practice.<br/>
                         <span class="unique-word">Unique word</span>
                         <br/>
                         <span class="link">Link word</span>
                     </div>
+                </div>
+
                 <a href="#projects" id="projects"></a>
+                <div class="mini-title-mini-text-container">
                     <div class="mini-title">Projects</div>
                     <div class="mini-text">
-                        - Beatmaking originated in rap music and originally consists of creating an instrumental or beat by using existing rhythms to create new ones (sampling). It shares its history with this genre, but also with the technical evolution of the tools that enable its practice.<br/>
-                        - Here is some perfect projects please check my <a href="https://open.spotify.com/artist/5tO2OSAYoFLMa1hACvf9Rz"><span class="link">spotify account</span></a> for more.
-                        <br/><br/>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5tO2OSAYoFLMa1hACvf9Rz?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        Beatmaking originated in rap music and originally consists of creating an instrumental or beat by using existing rhythms to create new ones (sampling). It shares its history with this genre, but also with the technical evolution of the tools that enable its practice.<br/>
+                        Here is some perfect projects please check my <a href="https://open.spotify.com/artist/5tO2OSAYoFLMa1hACvf9Rz"><span class="link">spotify account</span></a> for more.
                         <br/><br/>
                         <div class="music-image-container">
                             <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte1.jpg" alt="image"/>
@@ -208,12 +214,17 @@
                             <img class="music-image" src="https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte4.jpg" alt="image"/>
                         </div>
                         <br/><br/>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5tO2OSAYoFLMa1hACvf9Rz?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <br/><br/>
                     </div>
+                </div>
+
                 <a href="#contact" id="contact"></a>
+                <div class="mini-title-mini-text-container">
                     <div class="mini-title">Contact</div>
                     <div class="mini-text">
-                        - Beatmaking originated in rap music and originally consists of creating an instrumental or beat by using existing rhythms to create new ones (sampling). It shares its history with this genre, but also with the technical evolution of the tools that enable its practice.<br/>
-                        - Here are some ways to contact <span class="unique-word">Loser</span>.
+                        Beatmaking originated in rap music and originally consists of creating an instrumental or beat by using existing rhythms to create new ones (sampling). It shares its history with this genre, but also with the technical evolution of the tools that enable its practice.<br/>
+                        Here are some ways to contact <span class="unique-word">Loser</span>.
                         <br/><br/>
                         <div class="contact-image-container">
                             <a href="https://open.spotify.com/artist/5tO2OSAYoFLMa1hACvf9Rz?si=eE4AQxymRCeSDSqceJ0BiQ" target="_blank">
@@ -233,33 +244,44 @@
                             </a>
                         </div>
                     </div>
+                </div>
+
                 <a href="#info" id="info"></a>
+                <div class="mini-title-mini-text-container">
                     <div class="mini-title">Info</div>
                     <div class="mini-text">
-                        - Beatmaking originated in rap music and originally consists of creating an instrumental or beat by using existing rhythms to create new ones (sampling). It shares its history with this genre, but also with the technical evolution of the tools that enable its practice.<br/>
-                        - We're gonna write some <span class="link">info</span> here.
+                        Beatmaking originated in rap music and originally consists of creating an instrumental or beat by using existing rhythms to create new ones (sampling). It shares its history with this genre, but also with the technical evolution of the tools that enable its practice.<br/>
+                        We're gonna write some <span class="link">info</span> here.
                     </div>
+                </div>
+                <div class="container footer">
+                    | By gpx-zero last update in 2022/12/09 <br/>
+                    | © 2022 Loser.
+                </div>
+
             </div>
-            <div class="container footer"> | by gpx-zero last update in 2022/12/08 </div>
         </div>
+
         <script>
+            
+            // Goto function //
+            function goto(id){
+                document.getElementById("all-elements").style.opacity = "0";
+                document.getElementById(id).click();
+                setTimeout(()=>{ document.getElementById("all-elements").style.opacity = "1"; }, 200);
+            }
 
-// Goto function //
-function goto(id){
-    document.getElementById("dailog-box-container").style.display = "0";
-    document.getElementById(id).click();
-}
+            // On window load // 
+            window.onload = () => {
 
-// On window load // 
-window.onload = () => {
+                setTimeout(()=>{
+                    document.getElementById("dailog-box-container").style.display = "none";
+                    document.getElementById("all-elements").style.display = "block";
+                }, 0);
 
-    setTimeout(()=>{
-        document.getElementById("dailog-box-container").style.display = "none";
-        document.getElementById("all-elements").style.display = "block";
-    }, 1000);
-
-}
+            }
 
         </script>
+
     </body>
 </html>
