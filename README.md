@@ -10,7 +10,6 @@
 
 > - Official website for loser.
 > - Hosting by github and blogger.
-> - made by gpx-zero.
 
 <br/>
 
