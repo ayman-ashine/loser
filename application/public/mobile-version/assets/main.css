@@ -1,0 +1,213 @@
+:root {
+    --white: #f0f0f0;
+    --dark-white: #e0e0e0;
+    --black: #000000;
+    --black-transparent: #000000a0;
+    --red: #e06060;
+    --yellow: #e0de60;
+    --blue: #608de0;
+    --dark-blue: #111415;
+    --green: #60e090;
+    --light-green: #50ff90;
+    --title-font-weight: 600;
+    --text-font-weight: 100;
+}
+*{
+    color: var(--white);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Play';
+    font-weight: var(--text-font-weight);
+}
+html{
+    background-color: var(--dark-blue);
+}
+#loading{
+    background-color: var(--dark-blue);
+    color: var(--red);
+    position: absolute;
+    z-index: 999;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+}
+#loading div{
+    place-self: center;
+    position: absolute;
+}
+#loading div span{
+    display: inline-block;
+}
+#loading div span:nth-child(1){
+    color: var(--red);
+    animation: loading-animation 0.8s infinite;
+}
+#loading div span:nth-child(2){
+    color: var(--yellow);
+    animation: loading-animation 0.5s infinite;
+}
+#loading div span:nth-child(3){
+    color: var(--blue);
+    animation: loading-animation 0.7s infinite;
+}
+#loading div span:nth-child(4){
+    color: var(--green);
+    animation: loading-animation 0.6s infinite;
+}
+@keyframes loading-animation {
+    0%{ transform: scale(0.5); }
+    50%{ transform: scale(1.5); }
+    100%{ transform: scale(0.5); }
+}
+main{
+    display: none;
+    max-width: 800px;
+}
+header{
+    background-color: var(--dark-blue);
+    border-bottom: solid 1px var(--blue);
+    box-shadow: var(--blue) 0 0 10px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 1em;
+}
+header .three-bars{
+    fill: var(--blue);
+    width: 25px;
+    height: 25px;
+}
+header .three-bars:hover{
+    fill: var(--white);
+}
+header .choices{
+    display: none;
+}
+.choices-animation-open-class{
+    animation: choices-animation-open 0.5s;
+}
+.choices-animation-close-class{
+    animation: choices-animation-close 0.5s;
+}
+@keyframes choices-animation-open {
+    0%{
+        margin-top: -9.5em;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+@keyframes choices-animation-close {
+    0%{
+        margin-top: 0;
+        opacity: 1;
+    }
+    100%{
+        margin-top: -9.5em;
+        opacity: 0;
+    }
+}
+header .choices span{
+    font-weight: var(--title-font-weight);
+    background-color: var(--blue);
+    color: var(--black);
+    border-radius: 0.2em;
+    display: block;
+    width: 100%;
+    padding: 0.2em;
+    margin: 0.5em 0;
+    opacity: 0.6;
+}
+header .choices span:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+header .choices span img{
+    vertical-align: middle;
+}
+nav{
+
+}
+nav div{
+    display: grid;
+    height: 350px;
+    overflow: hidden;
+}
+nav div img{
+    width: 100%;
+}
+nav div h1{
+    color: var(--green);
+    text-shadow: var(--light-green)0 0 10px;
+    font-weight: var(--title-font-weight);
+    font-size: 5em;
+    place-self: center;
+    position: absolute;
+}
+nav div h1 p{
+    color: var(--red);
+    text-shadow: var(--red) 0 0 5px;
+    font-weight: var(--title-font-weight);
+    font-size: 12px;
+    text-align: center;
+}
+article{
+    padding: 0.5em;
+}
+article h1{
+    background-color: var(--blue);
+    padding: 0.5em 1em;
+    margin-top: 5em;
+    border-radius: 0.2em 0.2em 0 0;
+}
+article section{
+    background-color: var(--black-transparent);
+    border-left: solid 1px var(--blue);
+    padding: 1em;
+    border-radius: 0 0 0.2em 0.2em;
+}
+.links{
+    color: var(--yellow);
+}
+.unique-word{
+    color: var(--red);
+    font-weight: var(--title-font-weight);
+}
+.album-container{
+    display: table;
+    text-align: center;
+    margin: 1em 0;
+}
+.album-container .album{
+    width: 45%;
+    margin: 0.4em;
+    opacity: 0.8;
+    transition: transform 200ms;
+    border-radius: 10px;
+}
+.album-container .album:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.contact-icons-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+.contact-icons-container .contact-icons{
+    opacity: 0.8;
+    transition: transform 200ms;
+}
+.contact-icons-container .contact-icons:hover{
+    opacity: 1;
+    transform: scale(1.15);
+}
+footer{
+    padding: 1em;
+    margin-top: 15em;
+}
