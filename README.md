@@ -1,6 +1,6 @@
 <p>
   <a href='https://itsmebadloser.blogspot.com'>
-    <img src='https://raw.githubusercontent.com/catraco/website.badloser/main/application/public/images/parte3.jpg' title='Loser logo'  width="200px"/>
+    <img src='https://raw.githubusercontent.com/catraco/website.loser/main/application/public/main-version/assets/logo.png' title='logo'  width="100px"/>
   </a>
 </p>
 
