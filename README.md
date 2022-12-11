@@ -1,12 +1,10 @@
-<p align="center">
+<p>
   <a href='https://catraco.github.io/app.html'>
-    <img src='https://raw.githubusercontent.com/catraco/website.loser/main/application/public/main-version/assets/logo.png' title='logo'  width="200px"/>
+    <img src='https://raw.githubusercontent.com/catraco/website.loser/main/assets/logo.png' title='logo'  width="200px"/>
   </a>
 </p>
 
-<h1> Loser ♪ </h1>
-
-<br/>
+#
 
 > - Official website for loser.
 > - Hosting by github.
