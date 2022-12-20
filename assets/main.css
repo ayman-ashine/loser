@@ -67,14 +67,12 @@ main{
 }
 header{
     background-color: var(--dark-blue);
-    border-bottom: solid 1px var(--blue);
-    box-shadow: var(--blue) 0 0 10px;
     position: fixed;
     z-index: 999;
     width: 100%;
-    padding: 1em;
 }
 header .three-bars{
+    margin: 1em;
     fill: var(--blue);
     width: 25px;
     height: 25px;
@@ -83,8 +81,11 @@ header .three-bars:hover{
     fill: var(--white);
 }
 header .choices{
+    background-color: var(--dark-blue);
     display: none;
-    text-align: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 1em;
 }
 .choices-animation-open-class{
     animation: choices-animation-open 0.5s;
@@ -94,21 +95,21 @@ header .choices{
 }
 @keyframes choices-animation-open {
     0%{
-        margin-top: -9.5em;
+        transform: translateX(-100%) scale(2);
         opacity: 0;
     }
     100%{
-        margin-top: 0;
+        transform: translateX(0%) scale(1);
         opacity: 1;
     }
 }
 @keyframes choices-animation-close {
     0%{
-        margin-top: 0;
+        transform: translateX(0%);
         opacity: 1;
     }
     100%{
-        margin-top: -9.5em;
+        transform: translateX(-100%);
         opacity: 0;
     }
 }
@@ -123,7 +124,7 @@ header .choices span{
     opacity: 0.6;
 }
 header .choices span:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
     opacity: 1;
 }
 header .choices span img{
@@ -148,6 +149,33 @@ nav div h1{
     font-size: 5em;
     place-self: center;
     position: absolute;
+    animation: main-title-animation 5s ease infinite;
+    /*
+    animation: ease;
+    animation: ease-in-out;
+    animation: reverse;*/
+}
+@keyframes main-title-animation{
+    0%{
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    40%{
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    50%{
+        transform: rotateX(50deg) rotateY(360deg) rotateZ(10deg);
+        opacity: 0.5;
+    }
+    60%{
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
 }
 nav div h1 p{
     color: var(--red);
@@ -168,7 +196,7 @@ article h1{
 }
 article section{
     background-color: var(--black-transparent);
-    border-left: solid 1px var(--blue);
+    border-left: solid 2px var(--blue);
     padding: 1em;
     border-radius: 0 0 0.2em 0.2em;
 }
