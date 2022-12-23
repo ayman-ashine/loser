@@ -6,7 +6,8 @@
     --red: #e06060;
     --yellow: #e0de60;
     --blue: #608de0;
-    --dark-blue: #111415;
+    --dark-blue: #101515;
+    --low-blue: #608de050;
     --green: #60e090;
     --light-green: #50ff90;
     --title-font-weight: 600;
@@ -24,118 +25,17 @@
 html{
     background-color: var(--dark-blue);
 }
-#loading{
-    background-color: var(--dark-blue);
-    color: var(--red);
-    position: absolute;
-    z-index: 999;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    font-size: 2em;
-}
-#loading div{
-    place-self: center;
-    position: absolute;
-}
-#loading div span{
-    display: inline-block;
-}
-#loading div span:nth-child(1){
-    color: var(--blue);
-    animation: loading-animation 0.8s infinite;
-}
-#loading div span:nth-child(2){
-    color: var(--yellow);
-    animation: loading-animation 0.5s infinite;
-}
-#loading div span:nth-child(3){
-    color: var(--red);
-    animation: loading-animation 0.9s infinite;
-}
-#loading div span:nth-child(4){
-    color: var(--green);
-    animation: loading-animation 0.7s infinite;
-}
-@keyframes loading-animation {
-    0%  { transform: scaleY(-0.2); }
-    50% { transform: scaleY(-1.6); }
-    100%{ transform: scaleY(-0.2); }
-}
 main{
     display: none;
 }
-header{
-    background-color: var(--dark-blue);
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-}
-header .three-bars{
-    margin: 1em;
-    fill: var(--blue);
-    width: 25px;
-    height: 25px;
-}
-header .three-bars:hover{
-    fill: var(--white);
-}
-header .choices{
-    background-color: var(--dark-blue);
-    display: none;
-    position: absolute;
-    width: 100%;
-    padding: 0 1em;
-}
-.choices-animation-open-class{
-    animation: choices-animation-open 0.5s;
-}
-.choices-animation-close-class{
-    animation: choices-animation-close 0.5s;
-}
-@keyframes choices-animation-open {
-    0%{
-        transform: translateX(-100%) scale(2);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0%) scale(1);
-        opacity: 1;
-    }
-}
-@keyframes choices-animation-close {
-    0%{
-        transform: translateX(0%);
-        opacity: 1;
-    }
-    100%{
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-}
-header .choices span{
-    font-weight: var(--title-font-weight);
-    background-color: var(--blue);
-    color: var(--black);
-    border-radius: 0.2em;
-    display: block;
-    padding: 0.2em;
-    margin: 0.5em 0;
-    opacity: 0.6;
-}
-header .choices span:hover{
-    transform: scale(1.02);
-    opacity: 1;
-}
-header .choices span img{
-    vertical-align: middle;
-}
 nav{
     max-width: 800px;
+    margin-top: 2em;
+    border: solid 1px var(--low-blue);
 }
 nav div{
     display: grid;
-    height: 300px;
+    height: 350px;
     overflow: hidden;
 }
 nav div img{
@@ -149,31 +49,32 @@ nav div h1{
     font-size: 5em;
     place-self: center;
     position: absolute;
-    animation: main-title-animation 5s ease infinite;
-    /*
-    animation: ease;
-    animation: ease-in-out;
-    animation: reverse;*/
+    animation: main-title-animation 5s infinite;
 }
 @keyframes main-title-animation{
     0%{
         transform: rotateX(0deg);
+        text-shadow: var(--light-green) 0 0 10px;
         opacity: 1;
     }
-    40%{
+    2%{
         transform: rotateX(0deg);
-        opacity: 1;
-    }
-    50%{
-        transform: rotateX(50deg) rotateY(360deg) rotateZ(10deg);
+        text-shadow: var(--light-green) 5px -5px 10px;
         opacity: 0.5;
     }
-    60%{
+    4%{
+        transform: rotateX(-30deg);
+        text-shadow: var(--light-green) -10px 5px 5px;
+        opacity: 0.5;
+    }
+    6%{
         transform: rotateX(0deg);
+        text-shadow: var(--light-green) -5px -5px 5px;
         opacity: 1;
     }
-    100%{
+    8%{
         transform: rotateX(0deg);
+        text-shadow: var(--light-green) 0 0 10px;
         opacity: 1;
     }
 }
@@ -185,8 +86,11 @@ nav div h1 p{
     text-align: center;
 }
 article{
-    padding: 0.5em;
+    background-color: var(--dark-blue);
+    padding: 1em;
     max-width: 800px;
+    margin-top: 1em;
+    border: solid 1px var(--low-blue);
 }
 article h1{
     background-color: var(--blue);
@@ -237,6 +141,7 @@ article section{
     transform: scale(1.15);
 }
 footer{
+    font-size: 0.8em;
     padding: 1em;
     margin-top: 15em;
 }

@@ -3,38 +3,52 @@
 
         <meta charset="utf-8"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <title>Home-Loser</title>
+        <title>Home - Loser</title>
         <style> @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); </style>
         <style>@import url("https://fonts.googleapis.com/css2?family=Eater&family=Nunito&family=Play&display=swap");</style>
-        <link href="assets/logo.png" rel="shortcut icon"/>
+        <link href="assets/logo-icon.svg" rel="shortcut icon"/>
         <link rel="stylesheet" href="assets/main.css" />
+        <link rel="stylesheet" href="assets/loading.css" />
+        <link rel="stylesheet" href="assets/header.css" />
 
     </head>
     <body>
 
-        <div id="loading"><div><span>❚</span><span>❚</span><span>❚</span><span>❚</span></div></div>
+        <div id="loading">
+            <div>
+                <span>❚</span>
+                <span>❚</span>
+                <span>❚</span>
+                <span>❚</span>
+            </div>
+        </div>
         
         <main>
 
             <header>
-                <svg class="three-bars" viewBox="0 0 16 16" version="1.1">
-                    <path d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
-                </svg>
-                <div class="choices">
+                <img src="assets/logo-icon.svg" class="logo-icon"/>
+                <div class="container-three-bars">
+                    <svg class="three-bars" viewBox="0 0 16 16" version="1.1">
+                        <path d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                    </svg>
+                </div>
+                <div class="container-options">
                     <span class="options" section="about">
-                        <img src="https://img.icons8.com/ios-glyphs/20/null/info--v1.png" alt="icon"/> about
+                        <img src="https://img.icons8.com/ios-glyphs/26/null/info--v1.png" alt="icon"/> About
                     </span>
                     <span class="options" section="projects">
-                        <img src="https://img.icons8.com/material-sharp/20/null/project-management.png" alt="icon"/> projects
+                        <img src="https://img.icons8.com/material-sharp/26/null/project-management.png" alt="icon"/> Projects
                     </span>
                     <span class="options" section="contact">
-                        <img src="https://img.icons8.com/material/20/null/phone-contact.png" alt="icon"/> contact
+                        <img src="https://img.icons8.com/material/26/null/phone-contact.png" alt="icon"/> Contact
                     </span>
                     <span class="options" section="info">
-                        <img src="https://img.icons8.com/external-inkubators-glyph-inkubators/20/null/external-help-video-interface-inkubators-glyph-inkubators.png" alt="icon"/> info
+                        <img src="https://img.icons8.com/external-inkubators-glyph-inkubators/26/null/external-help-video-interface-inkubators-glyph-inkubators.png" alt="icon"/> Info
                     </span>
                 </div>
             </header>
+
+            <br/>
 
             <nav>
                 <div>
@@ -47,6 +61,8 @@
             </nav>
 
             <article>
+
+                <iframe style="border-radius:10px; margin-top: 5em;" src="https://open.spotify.com/embed/artist/5tO2OSAYoFLMa1hACvf9Rz?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
                 <a href="#about" id="about"></a>
                 <h1>About</h1>
@@ -71,7 +87,6 @@
                         <img class="album" src="assets/album-3.jpg" alt="album image"/>
                         <img class="album" src="assets/album-4.jpg" alt="album image"/>
                     </div>
-                    <iframe style="border-radius:10px" src="https://open.spotify.com/embed/artist/5tO2OSAYoFLMa1hACvf9Rz?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </section>
 
                 <a href="#contact" id="contact"></a>

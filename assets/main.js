@@ -1,21 +1,21 @@
 "use strict";
 
-var choices = document.getElementsByClassName("choices")[0];
+var containerOptions = document.getElementsByClassName("container-options")[0];
 var options = document.querySelectorAll(".options");
 
 // Scroll header function //
 function scrollHeader(){
 
-    if( choices.style.display == "none" || choices.style.display == "" ){
-        choices.style.display = "block";
-        if( choices.classList.contains("choices-animation-close-class") ){
-            choices.classList.remove("choices-animation-close-class");
+    if( containerOptions.style.display == "none" || containerOptions.style.display == "" ){
+        containerOptions.style.display = "block";
+        if( containerOptions.classList.contains("options-animation-close-class") ){
+            containerOptions.classList.remove("options-animation-close-class");
         }
-        choices.classList.add("choices-animation-open-class");
+        containerOptions.classList.add("options-animation-open-class");
     }else{
-        choices.classList.remove("choices-animation-open-class");
-        choices.classList.add("choices-animation-close-class");
-        setTimeout(()=>{ choices.style.display = "none"; }, 400);
+        containerOptions.classList.remove("options-animation-open-class");
+        containerOptions.classList.add("options-animation-close-class");
+        setTimeout(()=>{ containerOptions.style.display = "none"; }, 400);
     }
 
 }
