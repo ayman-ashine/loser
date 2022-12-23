@@ -1,6 +1,6 @@
 <p>
   <a href='https://catraco.github.io/app.html'>
-    <img src='https://raw.githubusercontent.com/catraco/website.loser/main/assets/logo.png' title='logo'  width="200px"/>
+    <img src='assets/logo-icon.png' title='logo'  width="200px"/>
   </a>
 </p>
 
