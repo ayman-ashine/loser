@@ -6,6 +6,8 @@ var options = document.querySelectorAll(".options");
 // Scroll header function //
 function scrollHeader(){
 
+    "use strict";
+
     if( containerOptions.style.display == "none" || containerOptions.style.display == "" ){
         containerOptions.style.display = "block";
         if( containerOptions.classList.contains("options-animation-close-class") ){
@@ -23,10 +25,12 @@ function scrollHeader(){
 // Setup function //
 function setup(){
 
+    "use strict";
+
     setTimeout(()=>{
         document.getElementById("loading").style.display = "none";
         document.getElementsByTagName("main")[0].style.display = "block";
-    }, 500);
+    }, 50000);
 
     document.getElementsByClassName("three-bars")[0].onclick = () => {
         scrollHeader();
@@ -43,6 +47,8 @@ function setup(){
 
 // On window load //
 window.onload = () => {
+
+    "use strict";
 
     setup();
 

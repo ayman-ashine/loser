@@ -6,38 +6,43 @@
     font-size: 2em;
 }
 #loading div{
+    position: relative;
     place-self: center;
+    word-spacing: -1em;
+}
+#loading div::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -1%;
+    width: 104%;
+    height: 100%;
+    background-color: var(--dark-blue);
 }
 #loading div span{
+    color: var(--green);
     display: inline-block;
 }
 #loading div span:nth-child(1){
-    color: var(--blue);
     animation: loading-animation 0.8s infinite;
 }
 #loading div span:nth-child(2){
-    color: var(--yellow);
     animation: loading-animation 0.7s infinite;
 }
 #loading div span:nth-child(3){
-    color: var(--red);
     animation: loading-animation 0.5s infinite;
 }
 #loading div span:nth-child(4){
-    color: var(--green);
     animation: loading-animation 0.6s infinite;
 }
 @keyframes loading-animation {
     0%  {
-        transform: translateY(0%);
-        transform: scaleY(-0.1) translateY(0%);
+        transform: scaleY(0);
     }
     50% {
-        transform: translateY(-50%);
-        transform: scaleY(-1.5) translateY(15%);
+        transform: scaleY(-2);
     }
-    100%{
-        transform: translateY(0%);
-        transform: scaleY(-0.1) translateY(0%);
+    100% {
+        transform: scaleY(0);
     }
 }
