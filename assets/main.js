@@ -30,7 +30,7 @@ function setup(){
     setTimeout(()=>{
         document.getElementById("loading").style.display = "none";
         document.getElementsByTagName("main")[0].style.display = "block";
-    }, 50000);
+    }, 500);
 
     document.getElementsByClassName("three-bars")[0].onclick = () => {
         scrollHeader();
