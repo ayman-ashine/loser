@@ -29,7 +29,6 @@ function setup(){
 
     setTimeout(()=>{
         document.getElementById("loading").style.display = "none";
-        document.getElementsByTagName("main")[0].style.display = "block";
     }, 500);
 
     document.getElementsByClassName("three-bars")[0].onclick = () => {
@@ -49,6 +48,10 @@ function setup(){
 window.onload = () => {
 
     "use strict";
+    
+}
+
+document.getElementById("iframe").onload = () => {
 
     setup();
 

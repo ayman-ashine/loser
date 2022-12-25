@@ -5,6 +5,16 @@
     header .three-bars{
         display: none;
     }
+    nav div{
+        height: 500px;
+    }
+    .album-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .album-container .album {
+        width: 22%;
+    }
 }
 
 header{
