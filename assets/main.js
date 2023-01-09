@@ -29,6 +29,7 @@ function setup(){
 
     setTimeout(()=>{
         document.getElementById("loading").style.display = "none";
+        document.getElementsByTagName("html")[0].style.overflowY = "scroll";
     }, 500);
 
     document.getElementsByClassName("three-bars")[0].onclick = () => {

@@ -1,145 +1,57 @@
+/* --------------- Main --------------- */
+
 :root {
-    --white: #f0f0f0;
+    --white: #e0e0e0;
     --dark-white: #e0e0e0;
     --black: #000000;
     --black-transparent: #000000a0;
-    --red: #e06060;
-    --yellow: #e0de60;
-    --blue: #608de0;
+    --red: #e05050;
+    --yellow: #e0e050;
+    --blue: #5090e0;
     --dark-blue: #101515;
     --low-blue: #608de050;
-    --green: #60e090;
+    --green: #50e090;
     --light-green: #50ff90;
+    --purple: #e050e0;
     --title-font-weight: 600;
     --text-font-weight: 100;
 }
+
 *{
     color: var(--white);
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
-    font-size: 1em;
+    font-size: 15px;
     font-family: 'Play';
     font-weight: var(--text-font-weight);
 }
+
 html{
     background-color: var(--dark-blue);
-}
-nav{
-    max-width: 800px;
-    margin-top: 2em;
-    border: solid 1px var(--low-blue);
-}
-nav div{
-    display: grid;
-    height: 300px;
     overflow: hidden;
 }
-nav div img{
-    width: 100%;
-    height: 100%;
+
+a {
+    text-decoration: none;
 }
-nav div h1{
-    color: var(--green);
-    text-shadow: var(--light-green) 0 0 10px;
-    font-weight: var(--title-font-weight);
-    font-size: 5em;
-    place-self: center;
-    position: absolute;
-    animation: main-title-animation 5s infinite;
+
+/* --------------- Customize --------------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
 }
-@keyframes main-title-animation{
-    0%{
-        transform: rotateX(0deg);
-        text-shadow: var(--light-green) 0 0 10px;
-        opacity: 1;
-    }
-    2%{
-        transform: rotateX(0deg);
-        text-shadow: var(--light-green) 5px -5px 10px;
-        opacity: 0.5;
-    }
-    4%{
-        transform: rotateX(-30deg);
-        text-shadow: var(--light-green) -10px 5px 5px;
-        opacity: 0.5;
-    }
-    6%{
-        transform: rotateX(0deg);
-        text-shadow: var(--light-green) -5px -5px 5px;
-        opacity: 1;
-    }
-    8%{
-        transform: rotateX(0deg);
-        text-shadow: var(--light-green) 0 0 10px;
-        opacity: 1;
-    }
+
+::-webkit-scrollbar-track {
+    background: none;
 }
-nav div h1 p{
-    color: var(--red);
-    text-shadow: var(--red) 0 0 5px;
-    font-weight: var(--title-font-weight);
-    font-size: 0.15em;
-    text-align: center;
+
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 5px;
 }
-article{
-    background-color: var(--dark-blue);
-    padding: 1em;
-    margin-top: 1em;
-    max-width: 800px;
-    border: solid 1px var(--low-blue);
-}
-article h1{
-    background-color: var(--blue);
-    padding: 0.5em 1em;
-    margin-top: 5em;
-    border-radius: 0.2em 0.2em 0 0;
-}
-article section{
-    background-color: var(--black-transparent);
-    border-left: solid 2px var(--blue);
-    padding: 1em;
-    border-radius: 0 0 0.2em 0.2em;
-}
-.links{
-    color: var(--yellow);
-}
-.unique-word{
-    color: var(--red);
-    font-weight: var(--title-font-weight);
-}
-.album-container{
-    display: table;
-    text-align: center;
-    margin: 1em 0 0 0;
-}
-.album-container .album{
-    width: 46%;
-    margin: 0.2em;
-    opacity: 0.8;
-    border-radius: 10px;
-    transition: transform 200ms;
-}
-.album-container .album:hover{
-    z-index: 100;
-    opacity: 1;
-    transform: scale(1.1);
-}
-.contact-icons-container{
-    display: flex;
-    justify-content: space-around;
-    padding: 1em;
-}
-.contact-icons-container .contact-icons{
-    opacity: 0.8;
-    transition: transform 200ms;
-}
-.contact-icons-container .contact-icons:hover{
-    opacity: 1;
-    transform: scale(1.15);
-}
-footer{
-    font-size: 0.8em;
-    padding: 1em;
-    margin-top: 15em;
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--green);
 }

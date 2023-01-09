@@ -1,0 +1,78 @@
+article {
+    background-color: var(--dark-blue);
+    padding: 1em;
+    max-width: 800px;
+    /*border: solid 1px var(--low-blue);*/
+}
+
+article .first-title {
+    margin-top: 1em;
+}
+
+article h1{
+    background-color: var(--green);
+    color: var(--dark-blue);
+    font-size: 1.5em;
+    font-weight: var(--title-font-weight);
+    margin-top: 5em;
+    padding: 0.2em 1em;
+    border-radius: 0.2em 0.2em 0 0;
+}
+article section{
+    border-left: solid 2px var(--green);
+    margin-bottom: 5em;
+    padding: 1em;
+    border-radius: 0 0 0.2em 0.2em;
+}
+.links{
+    color: var(--yellow);
+}
+.unique-word{
+    color: var(--red);0
+}
+.album-container{
+    display: flex;
+    margin-top: 1em;
+}
+.album-container .album{
+    width: 20%;
+    margin: 0.5em;
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: transform 200ms;
+}
+.album-container .album:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.contact-icons-container{
+    display: flex;
+    margin-top: 1em;
+}
+
+.contact-icons-container a {
+    opacity: 0.8;
+    transition: transform 200ms;
+}
+
+.contact-icons-container .contact-icons {
+    opacity: 0.8;
+    transition: transform 200ms;
+    vertical-align: middle;
+}
+
+.contact-icons-container .contact-icons:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.contact-icons-container a:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+footer {
+    font-size: 0.8em;
+    padding: 1em;
+    margin-top: 15em;
+}
