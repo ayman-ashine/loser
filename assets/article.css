@@ -1,64 +1,64 @@
 article {
     background-color: var(--dark-blue);
-    padding: 1em;
+    padding: 4em 0.4em;
     max-width: 800px;
-    /*border: solid 1px var(--low-blue);*/
 }
 
-article .first-title {
-    margin-top: 1em;
+.pointer {
+    color: var(--green);
 }
 
-article h1{
+article h1 {
     background-color: var(--green);
     color: var(--dark-blue);
-    font-size: 1.5em;
-    font-weight: var(--title-font-weight);
     margin-top: 5em;
     padding: 0.2em 1em;
     border-radius: 0.2em 0.2em 0 0;
+    font-size: 1.5em;
+    font-weight: var(--title-font-weight);
 }
-article section{
-    border-left: solid 2px var(--green);
+article section {
     margin-bottom: 5em;
     padding: 1em;
     border-radius: 0 0 0.2em 0.2em;
+    border-left: solid 2px var(--green);
 }
-.links{
+.links {
     color: var(--yellow);
 }
-.unique-word{
+.unique-word {
     color: var(--red);0
 }
-.album-container{
+.album-container {
     display: flex;
-    margin-top: 1em;
 }
-.album-container .album{
+.album-container .album {
     width: 20%;
     margin: 0.5em;
     opacity: 0.8;
     border-radius: 10px;
     transition: transform 200ms;
 }
-.album-container .album:hover{
+.album-container .album:hover {
     opacity: 1;
     transform: scale(1.1);
 }
-.contact-icons-container{
+.contact-icons-container {
     display: flex;
     margin-top: 1em;
 }
 
 .contact-icons-container a {
+    display: grid;
     opacity: 0.8;
     transition: transform 200ms;
+    font-size: 10px;
+    text-align: center;
 }
 
 .contact-icons-container .contact-icons {
     opacity: 0.8;
     transition: transform 200ms;
-    vertical-align: middle;
 }
 
 .contact-icons-container .contact-icons:hover {
@@ -69,10 +69,4 @@ article section{
 .contact-icons-container a:hover {
     opacity: 1;
     transform: scale(1.15);
-}
-
-footer {
-    font-size: 0.8em;
-    padding: 1em;
-    margin-top: 15em;
 }

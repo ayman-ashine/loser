@@ -1,21 +1,3 @@
-@media screen and (min-width: 600px) {
-    header {
-        text-align: center;
-    }
-    header .three-bars{
-        display: none;
-    }
-    nav div{
-        height: 500px;
-    }
-    .album-container {
-        display: flex;
-        justify-content: space-around;
-    }
-    .album-container .album {
-        width: 22%;
-    }
-}
 
 header {
     background-color: var(--dark-blue);

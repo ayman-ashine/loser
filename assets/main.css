@@ -1,5 +1,8 @@
 /* --------------- Main --------------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Eater&family=Nunito&family=Play&display=swap");
+
 :root {
     --white: #e0e0e0;
     --dark-white: #e0e0e0;
@@ -25,6 +28,7 @@
     font-size: 15px;
     font-family: 'Play';
     font-weight: var(--text-font-weight);
+    line-height: 1.6em;
 }
 
 html{
