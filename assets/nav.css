@@ -18,7 +18,7 @@ nav div img{
 nav div h1{
     color: var(--green);
     text-shadow: var(--light-green) 0 0 15px;
-    font-size: 6em;
+    font-size: 5em;
     place-self: center;
     position: absolute;
     animation: main-title-animation 5s infinite;
