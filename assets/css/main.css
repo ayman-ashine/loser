@@ -1,0 +1,66 @@
+/* --------------- Main --------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Eater&family=Nunito&family=Play&display=swap");
+
+:root {
+    --white: #c0c0c0;
+    --dark-white: #616161;
+    --black: #000000;
+    --black-transparent: #000000a0;
+    --red: #ff5f5f;
+    --yellow: #ffff70;
+    --blue: #2d81e7;
+    --purple: #e050e0;
+    --dark-blue: #101515;
+    --low-blue: #608de050;
+    --green: #30db7d;
+    --light-green: #57d887;
+    --title-font-weight: 600;
+    --text-font-weight: 100;
+}
+
+* {
+    color: var(--white);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Play';
+    font-weight: var(--text-font-weight);
+    line-height: 1.6em;
+}
+
+body {
+    background-color: var(--dark-blue);
+    overflow: hidden;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+hr {
+    border-color: var(--dark-white);
+}
+
+/* --------------- Customize --------------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--green);
+}

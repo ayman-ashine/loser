@@ -1,0 +1,74 @@
+article {
+    background-color: var(--dark-blue);
+    padding: 10em 0.5em;
+    max-width: 800px;
+}
+
+.pointer {
+    color: var(--green);
+    outline: none;
+}
+
+article h1 {
+    background-color: var(--green);
+    color: var(--dark-blue);
+    margin: 0;
+    margin-top: 5em;
+    padding: 0.2em 1em;
+    border-radius: 0.2em 0.2em 0 0;
+    font-size: 1.5em;
+    font-weight: var(--title-font-weight);
+}
+article section {
+    margin-bottom: 5em;
+    padding: 1em;
+    border-radius: 0 0 0.2em 0.2em;
+    border-left: solid 2px var(--green);
+}
+.links {
+    color: var(--yellow);
+}
+.unique-word {
+    color: var(--red);
+}
+.album-container {
+    display: flex;
+}
+.album-container .album {
+    width: 20%;
+    margin: 0.5em;
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: transform 200ms;
+}
+.album-container .album:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.contact-icons-container {
+    display: flex;
+    margin-top: 1em;
+}
+
+.contact-icons-container a {
+    display: grid;
+    opacity: 0.8;
+    transition: transform 200ms;
+    font-size: 10px;
+    text-align: center;
+}
+
+.contact-icons-container .contact-icons {
+    opacity: 0.8;
+    transition: transform 200ms;
+}
+
+.contact-icons-container .contact-icons:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.contact-icons-container a:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}

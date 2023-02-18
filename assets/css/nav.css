@@ -1,0 +1,73 @@
+nav {
+    width: 100vw;
+    height: 100vh;
+    border-bottom: solid 1px var(--low-blue);
+}
+
+nav #canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+nav div {
+    display: grid;
+    height: 400px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+nav div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav div h1 {
+    color: var(--green);
+    text-shadow: var(--light-green) 0 0 15px;
+    font-size: 5em;
+    place-self: center;
+    position: absolute;
+    animation: main-title-animation 5s infinite;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes main-title-animation {
+    0%{
+        transform: rotateX(0deg);
+        text-shadow: var(--light-green) 0 0 10px;
+        opacity: 1;
+    }
+    2%{
+        transform: rotateX(0deg);
+        text-shadow: var(--light-green) 5px -5px 10px;
+        opacity: 0.5;
+    }
+    4%{
+        transform: rotateX(-30deg);
+        text-shadow: var(--light-green) -10px 5px 5px;
+        opacity: 0.5;
+    }
+    6%{
+        transform: rotateX(0deg);
+        text-shadow: var(--light-green) -5px -5px 5px;
+        opacity: 1;
+    }
+    8%{
+        transform: rotateX(0deg);
+        text-shadow: var(--light-green) 0 0 10px;
+        opacity: 1;
+    }
+}
+
+nav div h1 p {
+    color: var(--red);
+    text-shadow: var(--red) 0 0 5px;
+    font-weight: var(--title-font-weight);
+    font-size: 0.16em;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
