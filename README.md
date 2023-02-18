@@ -4,7 +4,7 @@
   </a>
 </p>
 
-- ## Official website for loser.
+- ## Official Loser website.
 - ## Hosting by github.
 <br>
 <span><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="javaScript" /></span>
